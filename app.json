@@ -1,7 +1,8 @@
 {
   "expo": {
+    "owner": "naphtali2003",
     "name": "react-native-auth-aws-amplify",
-    "slug": "react-native-auth-aws-amplify",
+    "slug": "react-native-auth",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

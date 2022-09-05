@@ -1,4 +1,4 @@
-import { ActivityIndicator, Button, StyleSheet, Text, TextInput, Touchable, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, Button, Keyboard, StyleSheet, Text, TextInput, Touchable, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
 import React, { useState } from 'react';
 import { Auth } from 'aws-amplify';
 
@@ -42,6 +42,7 @@ const CreateAccount = ({ navigation }) => {
 
 
     return (
+        <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
         <View style={styles.container}>
 
             <View style={styles.inputContainer}>
@@ -88,7 +89,8 @@ const CreateAccount = ({ navigation }) => {
                 </TouchableOpacity>
             </View>
         
-        </View>
+            </View>
+        </TouchableWithoutFeedback>
     )
 }
 
