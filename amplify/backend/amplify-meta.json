@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactnativeauth-staging-103537-authRole",
+      "UnauthRoleArn": "arn:aws:iam::273743560315:role/amplify-reactnativeauth-staging-103537-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::273743560315:role/amplify-reactnativeauth-staging-103537-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-reactnativeauth-staging-103537-deployment",
+      "UnauthRoleName": "amplify-reactnativeauth-staging-103537-unauthRole",
+      "StackName": "amplify-reactnativeauth-staging-103537",
+      "StackId": "arn:aws:cloudformation:eu-west-1:273743560315:stack/amplify-reactnativeauth-staging-103537/7b14fc60-2d06-11ed-90f9-02826e407037",
+      "AmplifyAppId": "d6bf3wjpitwog"
+    }
+  },
+  "auth": {
+    "reactnativeauth": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "PREFERRED_USERNAME",
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 6,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "output": {
+        "UserPoolId": "eu-west-1_W0T7oNpmh",
+        "AppClientIDWeb": "1shrr1db2fqfunu0ehu1s05ov4",
+        "AppClientID": "4ncoa5ss6garfb2jeoauu26j3j",
+        "IdentityPoolId": "eu-west-1:a8be9c16-7aeb-430c-b0db-150654053e45",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-west-1:273743560315:userpool/eu-west-1_W0T7oNpmh",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "reactnativeauth"
+      },
+      "lastPushTimeStamp": "2022-09-05T10:44:52.251Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactnativeauth-staging-103537-deployment/amplify-cfn-templates/auth/reactnativeauth-cloudformation-template.json",
+        "logicalId": "authreactnativeauth"
+      }
+    }
+  }
+}
